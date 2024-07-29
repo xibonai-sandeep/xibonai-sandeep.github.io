@@ -19,8 +19,7 @@ nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   height: 60px;
-}
-.video-section {
+}.video-section {
   background-color: #7c21cc;
   padding: 100px 0;
   text-align: center;
@@ -45,16 +44,11 @@ nav {
   grid-gap: 20px;
 }
 
-.big-video {
+.big-video,
+.small-video {
   grid-column: 1 / -1;
   padding-bottom: 56.25%;
   /* 16:9 aspect ratio */
-}
-
-.small-video {
-  grid-column: span 1;
-  padding-bottom: 28.125%;
-  /* Half of 16:9 aspect ratio */
 }
 
 .video-wrapper {
@@ -80,7 +74,12 @@ nav {
     grid-template-rows: auto auto;
   }
 
+  .big-video {
+    grid-column: 1 / -1;
+  }
+
   .small-video {
+    grid-column: span 1;
     padding-bottom: 56.25%;
   }
 }
