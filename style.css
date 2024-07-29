@@ -284,9 +284,10 @@ nav.scrolled {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1fr;
+  /* gap: 50px; */
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .about-text .highlight {
