@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XibonAI - My SuperBrain</title>
+  <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>XibonAI</h1>
+            <h1>My SuperBrain</h1>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <span class="username">Welcome, Username</span>
+                </div>
+                <button class="logout-button">Logout</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section class="section card">
+                <h3>Generate Documents & Templates</h3>
+                <button>Click here to generate documents, view and edit them</button>
+            </section>
+            <section class="section card">
+                <h3>My SuperBrain</h3>
+                <button>Access Knowledge Base</button>
+            </section>
+            <section class="section card">
+                <h3>Your Daily Goals</h3>
+                <ul>
+                    <li>Complete project proposal</li>
+                    <li>Exercise for 30 minutes</li>
+                    <li>Read 20 pages of current book</li>
+                </ul>
+            </section>
+            <section class="section card">
+                <h3>Talk to Your Super Brain Better</h3>
+                <button>Start Chatting</button>
+            </section>
+            <section class="section card">
+                <h3>Top Themes</h3>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Productivity</li>
+                    <li>Personal Development</li>
+                </ul>
+            </section>
+            <section class="section card">
+                <h3>Learning Suggestions</h3>
+                <ul>
+                    <li>COMING SOON~</li>
+                    <li>COMING SOON~</li>
+                    <li>COMING SOON~</li>
+                </ul>
+            </section>
+            <section class="section card">
+                <h3>Top Proactive Suggestions</h3>
+                <ul>
+                  <li>COMING SOON~</li>
+                    <li>COMING SOON~</li>
+                    <li>COMING SOON~</li>
+                </ul>
+            </section>
+<section class="section card" id="dailyDocumentSection">
+    <h3>Daily generated document</h3>
+    <label for="purposeInput">Purpose of the document</label>
+    <input type="text" id="purposeInput" placeholder="Enter the purpose of the document">
+    
+    <label for="topicsInput">Selected topics</label>
+    <input type="text" id="topicsInput" placeholder="Enter topics separated by commas">
+    
+    <label for="docTypeSelect">Document Type</label>
+    <select id="docTypeSelect">
+        <option value="Technical Documentation">Technical Documentation</option>
+        <option value="Learning Material">Learning Material</option>
+        <option value="Market Research">Market Research</option>
+    </select>
+
+    <button id="generateDocumentBtn">Save your preferences</button>
+    <div id="documentResult" class="output" ></div>
+    <button id="submitEditsBtn" style="display: none;">Submit Edits</button>
+</section>
+        <section class="section card">
+                <h3>Generate Progress Report</h3>
+                <button>Create Report(coming soom)</button>
+            </section>
+        </main>
+    </div>
+    <script src="interface.js"></script>
+</body>
+</html>
