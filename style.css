@@ -961,7 +961,7 @@ nav.scrolled {
 }
 
 .social-links a:hover {
-  color: #fff;
+  color: gray;
 }
 
 @media (max-width: 768px) {
