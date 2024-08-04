@@ -1088,6 +1088,7 @@ nav.scrolled {
 
   .research-assistant-image {
     max-width: 100%;
+    object-fit: cover;
   }
 
   .menu-toggle {
