@@ -96,7 +96,56 @@ nav {
   -webkit-backdrop-filter: blur(10px);
   z-index: 999;
 }
+.startup-program-section {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  color: #4b0082;
+  font-size: 28px;
+}
 
+.startup-program-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.startup-program-content h2 {
+
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.startup-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.startup-logos img {
+  max-width: 350px;
+  height: auto;
+  mix-blend-mode: multiply;
+
+}
+
+@media (max-width: 767px) {
+  .startup-program-content h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .startup-logos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .startup-logos img {
+    max-width: 250px;
+    mix-blend-mode: multiply;
+  }
+}
 .logo img {
 
   height: 200px;
