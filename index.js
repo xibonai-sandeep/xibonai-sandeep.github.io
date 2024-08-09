@@ -22,18 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
   // Smooth scrolling for navigation links
   document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", function (e) {
-      e.preventDefault();
       const targetId = this.getAttribute("href");
-      const targetSection = document.querySelector(targetId);
-      const targetPosition = targetSection.offsetTop - navHeight;
+      if (targetId.startsWith("#")) {
+        e.preventDefault();
+        const targetSection = document.querySelector(targetId);
+        const targetPosition = targetSection.offsetTop - navHeight;
 
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
 
-      // Close mobile menu if open
-      closeMenu();
+        // Close mobile menu if open
+        closeMenu();
+      }
     });
   });
 
