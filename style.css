@@ -1,8 +1,14 @@
+@font-face {
+  font-family: xibon;
+  src: url(./xibon.ttf);
+}
+
+
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "xibon", sans-serif;
   color: #333;
   background-color: #f8f8ff;
 }
