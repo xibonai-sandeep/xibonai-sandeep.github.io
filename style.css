@@ -954,23 +954,27 @@ nav.scrolled {
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 40px;
+  /* Spacing between the grid items */
   justify-items: center;
+  padding: 0 20px;
 }
-
 .blog-post {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 350px;
+  width: 80%;
+  max-width: 360px;
   text-align: left;
   display: flex;
   flex-direction: column;
+  border: 1px solid #ddd;
+  margin: 20px;
+ 
 }
 
 .post-date {
