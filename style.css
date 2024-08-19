@@ -12,6 +12,10 @@ html {
   color: #333;
   background-color: #f8f8ff;
 }
+.see-all-blogs {
+  text-align: center;
+  margin-top: 2rem;
+}
 
 nav {
   position: sticky;
