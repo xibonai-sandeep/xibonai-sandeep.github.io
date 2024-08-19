@@ -1254,7 +1254,18 @@ nav.scrolled {
   }
 
 
-
+ .hero::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100vw;
+   height: 100vh;
+   background: radial-gradient(circle, rgba(75, 0, 130, 0.3) 0%, rgba(240, 230, 255, 0) 70%);
+   filter: blur(100px);
+   z-index: 1;
+ }
   .hero h1 {
     font-size: 40px;
   }
