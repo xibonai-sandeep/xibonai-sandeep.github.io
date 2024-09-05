@@ -183,6 +183,7 @@ nav {
   z-index: 1001;
 }
 
+
 nav.scrolled {
   background-color: rgba(75, 0, 130, 0.75);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -290,7 +291,7 @@ nav.scrolled {
 .close-menu-button {
   display: none;
   position: fixed;
-  top: 17%;
+top: 5%;
   right: 20px;
   font-size: 24px;
   cursor: pointer;
@@ -1436,5 +1437,39 @@ nav.scrolled {
   .chrome-logo {
     width: 16px;
     height: 16px;
+  }
+}
+.nav-links .auth-button-li {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links .auth-button-li {
+    display: block;
+  }
+
+  .nav-links .auth-button-li a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-links .auth-button-li .login-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+  .nav-links .auth-button-li .signup-button {
+    background-color: #fff;
+    color: #4b0082;
+  }
+
+  .auth-buttons {
+    display: none;
   }
 }
