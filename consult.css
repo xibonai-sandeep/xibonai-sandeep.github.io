@@ -138,6 +138,7 @@ html {
      border-radius: 30px;
      transition: all 0.3s ease;
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
  }
 
  .cta-button:hover {
@@ -395,3 +396,93 @@ html {
      }
  }
 
+.solution-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.solution-content h2 {
+    color: #4b0082;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.solution-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+ 
+}
+
+.solution-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.solution-list li::before {
+    content: "\2713";
+    color: #6c5ce7;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 24px;
+}
+.background-section {
+background-color: #f0e6ff;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.background-section a{
+    margin-top: 20px;
+}
+
+.background-content h2 {
+    color: #4b0082;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.background-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.6;
+   
+}
+
+.background-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.background-list li::before {
+    content: "\2713";
+    color: #6200ee;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 24px;
+}
+.background-section p{
+    text-align: center;
+
+}
+challenges{
+    background-color: #f0e6ff;
+    padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+}
