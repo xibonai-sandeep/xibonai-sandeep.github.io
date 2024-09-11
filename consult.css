@@ -52,7 +52,42 @@ html {
  .nav-links li a:hover {
      color: #a9a9b1;
  }
+.ai-readiness {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    
+    text-align: center;
+}
 
+.ai-readiness-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ai-readiness h1 {
+    color: #4b0082;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.assessment-button {
+    background-color: #4b0082;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-button:hover {
+    background-color: #6a0dad;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
  .auth-buttons {
      display: flex;
      gap: 15px;
