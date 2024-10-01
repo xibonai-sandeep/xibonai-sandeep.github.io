@@ -1,72 +1,93 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  const closeMenuButton = document.querySelector(".close-menu-button");
-  const nav = document.querySelector("nav");
-  const sections = document.querySelectorAll("section");
-  const navHeight = nav.offsetHeight;
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+const hamburgerIcon = hamburger.querySelector("i");
 
-  function toggleMenu() {
-    navLinks.classList.toggle("active");
-    closeMenuButton.classList.toggle("active");
+function openMenu() {
+  navLinks.classList.add("active");
+  hamburgerIcon.classList.remove("ri-menu-4-line");
+  hamburgerIcon.classList.add("ri-close-line");
+}
+
+function closeMenu() {
+  navLinks.classList.remove("active");
+  hamburgerIcon.classList.remove("ri-close-line");
+  hamburgerIcon.classList.add("ri-menu-4-line");
+}
+
+hamburger.addEventListener("click", (e) => {
+  e.stopPropagation();
+  navLinks.classList.contains("active") ? closeMenu() : openMenu();
+});
+
+// Close menu when a link is clicked
+navLinks.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+    closeMenu();
   }
+});
 
-  function closeMenu() {
-    navLinks.classList.remove("active");
-    closeMenuButton.classList.remove("active");
-  }
+// Prevent menu from closing when clicking inside it
+navLinks.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-  menuToggle.addEventListener("click", toggleMenu);
-  closeMenuButton.addEventListener("click", closeMenu);
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
 
-  // Smooth scrolling for navigation links
-  document.querySelectorAll(".nav-links a").forEach((link) => {
-    link.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      if (targetId.startsWith("#")) {
-        e.preventDefault();
-        const targetSection = document.querySelector(targetId);
-        const targetPosition = targetSection.offsetTop - navHeight;
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // Align the top of the section with the top of the viewport
+      });
 
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        });
-
-        // Close mobile menu if open
-        closeMenu();
-      }
-    });
-  });
-
-  // Highlight active section in navigation
-  function highlightActiveSection() {
-    let scrollPosition = window.pageYOffset;
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - navHeight;
-      const sectionBottom = sectionTop + section.offsetHeight;
-      const sectionId = section.getAttribute("id");
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-        document
-          .querySelector(`.nav-links a[href="#${sectionId}"]`)
-          .classList.add("active");
-      } else {
-        document
-          .querySelector(`.nav-links a[href="#${sectionId}"]`)
-          .classList.remove("active");
-      }
-    });
-  }
-
-  // Navigation scroll effect
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
+      // Close the mobile menu if it's open
+      navLinks.classList.remove("active");
+      hamburgerIcon.classList.remove("ri-close-line");
+      hamburgerIcon.classList.add("ri-menu-4-line");
     }
-    highlightActiveSection();
   });
+});
 
-  highlightActiveSection();
+// Particles.js initialization
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5, random: false },
+    size: { value: 3, random: true },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.1,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true,
+    },
+  },
+  retina_detect: true,
 });
