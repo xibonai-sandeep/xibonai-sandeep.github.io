@@ -7,7 +7,7 @@
   html {
     margin: 0;
     padding: 0;
-    font-family: xibon, sans-serif;
+    font-family: "xibon", sans-serif;
     background-color: #0d1117;
     color: #fff;
     height: 100%;
@@ -778,6 +778,7 @@
   @media (max-width: 768px) {
     nav {
       padding: 15px;
+      height: 30px;
     }
 
     .nav-links {
@@ -930,4 +931,68 @@
      grid-column: span 1;
      padding-bottom: 56.25%;
    }
+ }
+ .about-us {
+      padding: 4rem 2rem;
+        background-color: #111836;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ }
+
+ .about-us h2 {
+   margin-bottom: 2rem;
+   color: white;
+ }
+
+ .team-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+   margin-top: 3rem;
+ }
+
+.team-member {
+  background-color: #1a2332;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  background-image: linear-gradient(135deg, #1e3665, #251c47);
+}
+
+.team-member .icon {
+  font-size: 3rem;
+  color: #4da7ff;
+  margin-bottom: 1rem;
+}
+
+ .team-member h3 {
+   margin-bottom: 0.5rem;
+   color: white;
+ }
+
+ .team-member p {
+   color: white;
+ }
+
+ .team-description,
+ .mission-statement {
+   max-width: 800px;
+   margin: 2rem auto;
+   line-height: 1.6;
+ }
+
+ .about-us .cta-button {
+   display: inline-block;
+   margin-top: 2rem;
  }
