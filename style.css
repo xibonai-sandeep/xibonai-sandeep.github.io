@@ -944,7 +944,8 @@
 
  .about-us h2 {
    margin-bottom: 2rem;
-   color: white;
+   color: #a78bfa;
+   font-size: 2rem;
  }
 
  .team-container {
@@ -995,4 +996,55 @@
  .about-us .cta-button {
    display: inline-block;
    margin-top: 2rem;
+ }
+
+ .our-vision {
+   background: linear-gradient(135deg, #1e3665, #251c47);
+   padding: 6rem 8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ .vision-content {
+   max-width: 1000px;
+   text-align: center;
+
+ }
+
+ .our-vision h2{
+  color: #a78bfa;
+  font-size: 2rem;
+ }
+ .our-vision h2,
+ .our-vision h3,
+ .our-vision p {
+   text-align: center;
+   
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .our-vision p {
+   max-width: 800px;
+   
+ }
+
+ @media (max-width: 768px) {
+   .our-vision {
+     padding: 4rem 2rem;
+   }
+
+   .our-vision h2 {
+     font-size: 2rem;
+   }
+
+   .our-vision h3 {
+     font-size: 1.5rem;
+   }
+
+   .our-vision p {
+     font-size: 1rem;
+   }
  }
