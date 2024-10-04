@@ -1052,3 +1052,128 @@
      font-size: 1rem;
    }
  }
+ 
+
+ .meet-claire {
+   background-color: #0d1117;
+   padding: 6rem 2rem;
+   overflow: hidden;
+ }
+
+ .meet-claire .container {
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+ .meet-claire h2 {
+   font-size: 2.5rem;
+   text-align: center;
+   margin-bottom: 3rem;
+   background: linear-gradient(45deg, #4da7ff, #ff4da7);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .claire-content {
+   display: flex;
+   align-items: center;
+   gap: 4rem;
+ }
+
+ .claire-image {
+   flex: 1;
+   text-align: center;
+ }
+
+ .claire-image img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 50%;
+   box-shadow: 0 0 30px rgba(77, 167, 255, 0.3);
+ }
+
+ .claire-description {
+   flex: 1;
+ }
+
+ .claire-description h3 {
+   font-size: 1.8rem;
+   color: #4da7ff;
+   margin-bottom: 1rem;
+ }
+
+ .claire-description p {
+   font-size: 1.1rem;
+   color: #a0aec0;
+   margin-bottom: 2rem;
+   line-height: 1.6;
+ }
+
+ .claire-features {
+   list-style-type: none;
+   padding: 0;
+   margin-bottom: 2rem;
+ }
+
+ .claire-features li {
+   font-size: 1.1rem;
+   color: #ffffff;
+   margin-bottom: 1rem;
+   display: flex;
+   align-items: center;
+ }
+
+ .claire-features li i {
+   color: #4da7ff;
+   margin-right: 1rem;
+   font-size: 1.3rem;
+ }
+
+ .meet-claire .cta-button {
+   display: inline-block;
+   background: linear-gradient(45deg, #4da7ff, #ff4da7);
+   color: #fff;
+   padding: 0.75rem 1.5rem;
+   border-radius: 25px;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 1rem;
+   transition: background 0.3s ease;
+ }
+
+ .meet-claire .cta-button:hover {
+   background: linear-gradient(45deg, #3a8ff7, #e64a8a);
+ }
+
+ .meet-claire .cta-button i {
+   margin-left: 0.5rem;
+ }
+
+ @media (max-width: 768px) {
+   .meet-claire {
+     padding: 4rem 1rem;
+   }
+
+   .claire-content {
+     flex-direction: column;
+     gap: 2rem;
+   }
+
+   .claire-image img {
+     max-width: 250px;
+   }
+
+   .claire-description h3 {
+     font-size: 1.5rem;
+   }
+
+   .claire-description p {
+     font-size: 1rem;
+   }
+
+   .claire-features li {
+     font-size: 1rem;
+   }
+ }
+
+ 
