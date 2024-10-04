@@ -1088,7 +1088,7 @@
  .claire-image img {
    max-width: 100%;
    height: auto;
-   border-radius: 50%;
+   /* border-radius: 50%; */
    box-shadow: 0 0 30px rgba(77, 167, 255, 0.3);
  }
 
