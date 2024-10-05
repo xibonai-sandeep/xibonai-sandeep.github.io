@@ -3,7 +3,7 @@ function calculateROI() {
   const employees = document.getElementById("employees").value;
   const hourlyRate = document.getElementById("hourly-rate").value;
   
-  const annualSavings = employees * hourlyRate * 215; //placeholder, later will change it
+  const annualSavings = employees * hourlyRate * 315; //placeholder, later will change it
   document.getElementById(
     "savings-amount"
   ).textContent = `$${annualSavings.toLocaleString()}`;
@@ -13,10 +13,7 @@ function calculateROI() {
 document.getElementById("employees").addEventListener("input", calculateROI);
 document.getElementById("hourly-rate").addEventListener("input", calculateROI);
 
-document.querySelector(".cta-button").addEventListener("click", function (e) {
-  e.preventDefault();
-  alert("Free trial started!");
-});
+
 
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
