@@ -13,7 +13,7 @@
     <nav>
   <a href="#" class="logo">Claire</a>
   <div class="nav-links" id="navLinks">
-    <a href="#home">Home</a>
+    <a href="/">Home</a>
     <a href="#pain-points">Pain Points</a>
     <a href="#benefits">Benefits</a>
     <a href="#features">Features</a>
@@ -31,8 +31,15 @@
             <h1>Claire -Revolutionize Your Firm's <br> Productivity</h1>
             <p class="subtitle">Boost revenue by $1,165,000+ annually with AI-powered time tracking and workflow optimization.</p>
             <div class="cta-form">
-                <input type="email" placeholder="Enter your email">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="92575cef-4422-406c-a022-9d941dcbcaa9">
+
+                <input type="email" name="email" placeholder="Enter your email">
+                   <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                   <input type="hidden" name="redirect" value="https://xibonai.com/contact-success">
+                
                 <button>Start Your Free Trial <i class="ri-arrow-right-double-fill" style="font-weight: bolder; font-size: 15px;"></i></button>
+                </form>
             </div>
         </div>
     </div>

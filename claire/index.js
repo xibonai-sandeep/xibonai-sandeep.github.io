@@ -1,6 +1,4 @@
-document.querySelector("button").addEventListener("click", function () {
-  alert("Free trial started!");
-});
+
 function calculateROI() {
   const employees = document.getElementById("employees").value;
   const hourlyRate = document.getElementById("hourly-rate").value;
