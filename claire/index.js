@@ -71,3 +71,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+
+
+document.querySelector(".cta-form form").addEventListener("submit", function (e) {
+  const emailInput = this.querySelector('input[name="email"]');
+  const emailValue = emailInput.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailValue || !emailPattern.test(emailValue)) {
+    e.preventDefault(); // Prevent form submission
+    alert("Please fill in a valid email address.");
+  }
+});
