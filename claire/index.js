@@ -3,7 +3,7 @@ function calculateROI() {
   const employees = document.getElementById("employees").value;
   const hourlyRate = document.getElementById("hourly-rate").value;
   
-  const annualSavings = employees * hourlyRate * 315; //placeholder, later will change it
+  const annualSavings = employees * hourlyRate * 350; //placeholder, later will change it
   document.getElementById(
     "savings-amount"
   ).textContent = `$${annualSavings.toLocaleString()}`;
