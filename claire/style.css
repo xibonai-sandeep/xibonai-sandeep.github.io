@@ -992,6 +992,9 @@ background: linear-gradient(45deg, #617dcc, #b87ad4);
             font-size: 1.8rem;
            
         }
+                .tooltip{
+                    display: none;
+                }
  }
 
  @media (max-width: 480px) {
