@@ -12,6 +12,27 @@
 </head>
 
 <body>
+    <div id="onboarding" class="onboarding">
+    <div id="particles-js" style="z-index: -99999;"></div>
+        <div class="onboarding-content">
+            <h1>Elevate Your Firm with Claire</h1>
+            <p>Choose your industry to unlock AI-powered productivity</p>
+            <div class="firm-options">
+                <button class="firm-button" data-firm="accounting">
+                    <i class="ri-calculator-line"></i>
+                    <span>Accounting</span>
+                </button>
+                <button class="firm-button" data-firm="law">
+                    <i class="ri-scales-3-line"></i>
+                    <span>Law</span>
+                </button>
+                <button class="firm-button" data-firm="engineering">
+                    <i class="ri-tools-line"></i>
+                    <span>Engineering</span>
+                </button>
+            </div>
+        </div>
+    </div>
     <nav>
         <a href="#" class="logo">Claire</a>
         <div class="nav-links" id="navLinks">
@@ -32,6 +53,7 @@
 
     <div class="container">
         <div class="hero" id="home">
+            
             <h1>
                 Supercharge Your Firm’s Productivity with <strong>Claire</strong> - See what happens when every moment
                 works for you
@@ -307,6 +329,14 @@
             </div>
         </div>
     </footer>
+<button id="change-industry" onclick="resetFirmChoice()">
+    <i class="ri-refresh-line"></i>
+    <span>Change Industry</span>
+    <div class="tooltip">Change your industry and see what Claire can do!</div>
+</button>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <script src="index.js"></script>
 </body>
