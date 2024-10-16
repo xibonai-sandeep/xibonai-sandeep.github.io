@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form | Bespoke by XIBONAI</title>
-     <link rel="shortcut icon" href="logo-color.svg" type="image/x-icon" />
+    <title>Contact Form | Bespoke</title>
+    <link rel="shortcut icon" href="logo-color.svg" type="image/x-icon" />
     <style>
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            background-image: url('background.png'); /* Add your background image */
+            background-color: #0d1117;
+            /* Updated background color */
+            background-image: url('background.png');
             background-size: cover;
             background-position: center;
+            color: #fff;
+            /* Updated text color */
         }
+
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
         }
+
         .form-container {
             width: 90%;
             max-width: 700px;
             height: 100vh;
-            background: white;
+            background: #1a2332;
+            /* Updated background color */
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             display: flex;
             flex-direction: column;
         }
+
         .logo {
             display: block;
             margin: 10px auto;
             max-width: 150px;
             width: 100%;
         }
+
         h1 {
             font-size: 24px;
             margin: 10px 0;
-            color: #333;
+            color: #4da7ff;
+            /* Updated text color */
             text-align: center;
         }
+
         p {
             margin: 10px 0;
-            color: #666;
+            color: #a0aec0;
+            /* Updated text color */
             text-align: center;
         }
+
         iframe {
             flex-grow: 1;
             width: 100%;
             border: none;
         }
+
         .cta-button {
             display: inline-block;
-            background-color: rgba(75, 0, 130, 0.7);
+            background-color: #4da7ff;
+            /* Updated background color */
             color: white;
             padding: 10px 20px;
             border-radius: 4px;
@@ -66,24 +82,30 @@
             align-self: center;
             margin-bottom: 20px;
         }
+
         .cta-button:hover {
-            background-color: #0056b3;
+            background-color: #3a8ff7;
+            /* Updated hover color */
         }
+
         /* Media queries for responsiveness */
         @media (max-width: 768px) {
             .form-container {
                 width: 95%;
             }
         }
+
         @media (max-width: 480px) {
             .form-container {
                 width: 100%;
                 height: 100vh;
                 padding: 10px;
             }
+
             h1 {
-                font-size: 20px; /* Smaller font size on mobile devices */
+                font-size: 20px;
             }
+
             .cta-button {
                 padding: 8px 16px;
             }
@@ -98,13 +120,16 @@
         gtag("config", "G-MLKL6Q13LL");
     </script>
 </head>
+
 <body>
     <div class="form-container">
-        <img src="logo_black.png" alt="XibonAI Logo" class="logo">
+        <img src="logo.png" alt="XibonAI Logo" class="logo">
         <h1>Contact us</h1>
         <p>Fill out this form below to make your company AI ready!</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeePUrSzT0S4ubXpXJR_G6XjyN-ZL1TzopX6xRK0OFCX8Hiug/viewform">Loading…</iframe>
-        <a href="/consult" class="cta-button">Back to Home</a>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeePUrSzT0S4ubXpXJR_G6XjyN-ZL1TzopX6xRK0OFCX8Hiug/viewform">Loading…</iframe>
+        <a href="https://xibonai.com" class="cta-button">Back to Home</a>
     </div>
 </body>
+
 </html>
