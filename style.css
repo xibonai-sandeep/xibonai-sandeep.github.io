@@ -1,3 +1,29 @@
+  ::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #131a29;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #4d7cfe, #d67bff);
+    border-radius: 6px;
+    border: 3px solid #131a29;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #617dcc, #b87ad4);
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4d7cfe #131a29;
+}
+
+  
+  
   @font-face {
     font-family: xibon;
     src: url(./xibon.ttf);
@@ -678,6 +704,7 @@
     .ai-consulting .image-wrapper {
       width: 90vw;
       height: 300px;
+      display:none;
     }
 
     .features {
