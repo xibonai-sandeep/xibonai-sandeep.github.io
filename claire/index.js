@@ -4,6 +4,7 @@ const firmData = {
       title: "Supercharge Your Accounting Firm's Productivity with Claire",
       subtitle: "Automate workflows, maximize billable hours, and unlock growth in your accounting practice"
     },
+    image: "accounting.png", // Add image path
     painPoints: {
       title: "The Unseen Drain on Your Accounting Practice",
       cards: [
@@ -26,6 +27,7 @@ const firmData = {
       title: "Supercharge Your Law Firm's Productivity with Claire",
       subtitle: "Automate workflows, maximize billable hours, and unlock growth in your legal practice"
     },
+    image: "law.png", // Add image path
     painPoints: {
       title: "The Unseen Drain on Your Legal Practice",
       cards: [
@@ -48,6 +50,7 @@ const firmData = {
       title: "Supercharge Your Engineering Firm's Productivity with Claire",
       subtitle: "Automate workflows, maximize billable hours, and unlock growth in your engineering practice"
     },
+    image: "eng.png", // Add image path
     painPoints: {
       title: "The Unseen Drain on Your Engineering Practice",
       cards: [
@@ -73,6 +76,9 @@ function updateContent(firmType) {
   // Update hero section
   document.querySelector('.hero h1').innerHTML = data.hero.title;
   document.querySelector('.hero .subtitle').innerHTML = data.hero.subtitle;
+
+  // Update claire image
+  document.querySelector('.claire-image img').src = data.image;
 
   // Update pain points section
   document.querySelector('#pain-points h2').innerHTML = data.painPoints.title;
@@ -252,4 +258,3 @@ function resetFirmChoice() {
   localStorage.removeItem('selectedFirmType');
   location.reload(); // Reload the page to show the onboarding screen
 }
-
